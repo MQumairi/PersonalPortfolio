@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0, padding: 0
+}
+
+html {
+    min-height: 100%;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+body {
+  background-color: #E9F4F9;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  margin:0 auto;
+  padding:0;
+}
+
+/* HEADER */
+
+#header {
+  width: 100%;
+  margin-top: 0px;
+  height: min-content;
+  background-color: #E0EFF7;
+  padding: 30px 100px 30px 100px;
+  position: relative;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#logo {
+  font-size: 40px;
+  color: #77ACCE;
+  grid-row: 1;
+  grid-column: 1 / 6;
+}
+
+.logoBracket {
+  color: #637081;
+  display: inline-block;
+}
+
+.logoNormal {
+  display: inline-block;
+  text-shadow: 2px 2px #637081;
+}
+
+#navbar {
+  grid-row: 1;
+  grid-column: 7 / 12;
+  display: inline-block;
+  margin-top: 10px;
+  color: #7C98B3;
+}
+
+.navButton {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+
+
+/*FOOTER */
+
+#footer {
+  width: 100%;
+  margin-top: 0px;
+  height: min-content;
+  background-color: #CEE5F2;
+  padding: 30px 100px 30px 100px;
+  position: relative;
+  margin-top: -19px;
+  bottom: 0;
+}
+
+
+/*BODY */
+
+#mainContent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0;
+  margin-top: -19px;
+}
+
+#aboutRow {
+  grid-row: 1;
+  grid-column: 1 / 13;
+  height: min-content;
+  background-color: #D8EBF5;
+
+  /*is a grid of its own*/
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#projectRow {
+  grid-row: 2;
+  grid-column: 1 / 13;
+  height: min-content;
+  padding: 100px 100px 100px 100px;
+  background-color: #E9F4F9;
+}
+
+/*ABOUT ROW*/
+
+#about {
+  width: 100%;
+  grid-row: 1;
+  grid-column: 1 / 7;
+  padding: 100px 100px 100px 100px;
+}
+
+#skills {
+  grid-row: 1;
+  grid-column: 7 / 13;
+  padding: 100px 100px 100px 100px;
+  display: inline;
+}
+
+.listOfSkills {
+  display: inline;
+}
+
+.title {
+  margin: auto;
+  margin-bottom: 20px;
+  color: #77ACCE;
+}

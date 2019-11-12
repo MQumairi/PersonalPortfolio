@@ -1,0 +1,24 @@
+[12-Nov-2019 17:28:53 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/update.php on line 160
+[12-Nov-2019 17:28:53 UTC] PHP Stack trace:
+[12-Nov-2019 17:28:53 UTC] PHP   1. {main}() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-cron.php:0
+[12-Nov-2019 17:28:53 UTC] PHP   2. do_action_ref_array() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-cron.php:133
+[12-Nov-2019 17:28:53 UTC] PHP   3. WP_Hook->do_action() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/plugin.php:531
+[12-Nov-2019 17:28:53 UTC] PHP   4. WP_Hook->apply_filters() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/class-wp-hook.php:310
+[12-Nov-2019 17:28:53 UTC] PHP   5. wp_version_check() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/class-wp-hook.php:286
+[12-Nov-2019 17:28:53 UTC] PHP   6. trigger_error() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/update.php:160
+[12-Nov-2019 17:28:53 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/update.php on line 384
+[12-Nov-2019 17:28:53 UTC] PHP Stack trace:
+[12-Nov-2019 17:28:53 UTC] PHP   1. {main}() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-cron.php:0
+[12-Nov-2019 17:28:53 UTC] PHP   2. do_action_ref_array() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-cron.php:133
+[12-Nov-2019 17:28:53 UTC] PHP   3. WP_Hook->do_action() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/plugin.php:531
+[12-Nov-2019 17:28:53 UTC] PHP   4. WP_Hook->apply_filters() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/class-wp-hook.php:310
+[12-Nov-2019 17:28:53 UTC] PHP   5. wp_update_plugins() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/class-wp-hook.php:286
+[12-Nov-2019 17:28:53 UTC] PHP   6. trigger_error() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/update.php:384
+[12-Nov-2019 17:28:53 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/update.php on line 569
+[12-Nov-2019 17:28:53 UTC] PHP Stack trace:
+[12-Nov-2019 17:28:53 UTC] PHP   1. {main}() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-cron.php:0
+[12-Nov-2019 17:28:53 UTC] PHP   2. do_action_ref_array() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-cron.php:133
+[12-Nov-2019 17:28:53 UTC] PHP   3. WP_Hook->do_action() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/plugin.php:531
+[12-Nov-2019 17:28:53 UTC] PHP   4. WP_Hook->apply_filters() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/class-wp-hook.php:310
+[12-Nov-2019 17:28:53 UTC] PHP   5. wp_update_themes() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/class-wp-hook.php:286
+[12-Nov-2019 17:28:53 UTC] PHP   6. trigger_error() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/update.php:569
