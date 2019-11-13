@@ -53,6 +53,11 @@ get_header();
   </div>
 
 
+  <div id="goBackToArchive">
+    <a href="<?php echo site_url('/web-projects'); ?>"><div id="goBackToWebArchive">&lt;Back&gt;</div></a>
+  </div>
+
+
 
 </div>
 

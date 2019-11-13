@@ -83,7 +83,7 @@ get_header();
   <div id="programmingProjects">
 
     <div class="cardTitle">
-      &lt;PROGRAMMING PROJECTS&gt;
+      <a href="<?php echo site_url('/programming-projects'); ?>">&lt;PROGRAMMING PROJECTS&gt;</a>
     </div>
 
     <?php
@@ -170,7 +170,7 @@ get_header();
 <div id="webProjects">
 
   <div class="cardTitle">
-    &lt;WEB PROJECTS&gt;
+    <a href="<?php echo site_url('/web-projects'); ?>">&lt;WEB PROJECTS&gt;</a>
   </div>
 
   <?php
@@ -225,10 +225,6 @@ get_header();
     <?php
 
   }
-
-  echo paginate_links(array(
-  'total' => $homepageWebProjects->max_num_pages
-));
   ?>
 
 

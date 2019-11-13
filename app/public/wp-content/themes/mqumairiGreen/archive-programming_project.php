@@ -10,8 +10,9 @@ get_header();
   <?php
 
   $homepageProgrammingProjects = new WP_Query(array(
-    'posts_per_page' => 2,
-    'post_type' => 'programming_project'
+    'posts_per_page' => 5,
+    'post_type' => 'programming_project',
+    'paged' => get_query_var('paged', 1)
   ));
 
   while($homepageProgrammingProjects->have_posts()) {
@@ -27,14 +28,16 @@ get_header();
 
 
 
-      <div class="postProjectShare">
+      <div class="archiveProjectShare">
+
+        <a href="<?php the_permalink(); ?>"><div class="archiveReadMoreIcon"></div></a>
 
         <?php
 
         if(! (get_field('preview_project') == NULL)) {
           ?>
 
-          <a href="<?php the_field('preview_project');?>" target="_blank"><div class="postViewIcon"></div></a>
+          <a href="<?php the_field('preview_project');?>" target="_blank"><div class="archiveViewIcon"></div></a>
 
           <?php
         }
@@ -44,7 +47,7 @@ get_header();
 
           ?>
 
-          <a href="<?php the_field('project_git');?>" target="_blank"><div class="postGitIcon"></div></a>
+          <a href="<?php the_field('project_git');?>" target="_blank"><div class="archiveGitIcon"></div></a>
 
 
           <?php
@@ -60,6 +63,17 @@ get_header();
 
     <?php
   } ?>
+
+  <div class="pagination">
+
+  <div class="pageListProg">
+    <?php
+    echo paginate_links(array(
+      'total' => $homepageProgrammingProjects->max_num_pages
+    ));
+    ?>
+  </div>
+</div>
 
 </div>
 

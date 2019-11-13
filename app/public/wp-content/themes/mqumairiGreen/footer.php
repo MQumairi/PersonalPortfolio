@@ -13,6 +13,12 @@
     <div id="gitContact"></div> -->
   </div>
 
+  <div id="copyright">
+    Copyright © 2019 Mohammed Alqumairi.<br />
+    All rights reserved.
+  </div>
+
+
 
 </div>
 
