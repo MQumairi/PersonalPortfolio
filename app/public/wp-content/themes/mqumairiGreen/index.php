@@ -78,43 +78,83 @@ get_header();
   </div>
 
 
-<!-- PROGRAMMING CARD -->
+  <!-- PROGRAMMING CARD -->
 
-<div id="programmingProjects">
+  <div id="programmingProjects">
 
-  <div class="cardTitle">
-    &lt;PROGRAMMING PROJECTS&gt;
-  </div>
+    <div class="cardTitle">
+      &lt;PROGRAMMING PROJECTS&gt;
+    </div>
 
-  <div class="projectPost">
+    <?php
+
+    while(have_posts()) {
+      the_post();
+
+
+      ?>
+
+      <div class="projectPost">
+        <div class="projectImage"><img src="<?php the_field('project_image')?>" /></div>
+
+        <div class="projectText">
+          <div class="projectTitle"><a href="<?php the_permalink();?>"><?php the_title()?></a></div>
+          <div class="projectDescription"><?php the_excerpt(); ?></div>
+          <div class="projectShare">
+            <a href="<?php the_permalink();?>"><div class="readMore"></div></a>
+
+            <?php
+
+            if(! (get_field('preview_project') == NULL)) {
+              ?>
+
+              <a href="<?php the_field('preview_project');?>" target="_blank"><div class="viewIcon"></div></a>
+
+              <?php
+            }
+
+
+            if (! (get_field('project_git') == NULL)) {
+
+              ?>
+
+              <a href="<?php the_field('project_git');?>" target="_blank"><div class="gitIcon"></div></a>
+
+
+              <?php
+            }
+            ?>
+
+          </div>
+        </div>
+
+      </div>
+
+      <?php
+
+    }
+
+    echo paginate_links();
+    ?>
+
+
+
+
+
+    <!-- <div class="projectPost">
     <div class="projectImage"><img src="https://mqumairi.com/wp-content/uploads/2019/11/budgetBuddies.png" /></div>
 
     <div class="projectText">
-      <div class="projectTitle">BUDGET BUDDIES</div>
-      <div class="projectDescription">A template for Budget Buddies, designed during the 48in48 hacakthon in London.</div>
-      <div class="projectShare">
-        <a href=""><div class="readMore"></div></a>
-        <a href=""><div class="viewIcon"></div></a>
-        <a href=""><div class="gitIcon"></div></a>
-      </div>
-    </div>
-
+    <div class="projectTitle">BUDGET BUDDIES</div>
+    <div class="projectDescription">A template for Budget Buddies, designed during the 48in48 hacakthon in London.</div>
+    <div class="projectShare">
+    <a href=""><div class="readMore"></div></a>
+    <a href=""><div class="viewIcon"></div></a>
+    <a href=""><div class="gitIcon"></div></a>
   </div>
+</div>
 
-  <div class="projectPost">
-    <div class="projectImage"><img src="https://mqumairi.com/wp-content/uploads/2019/11/budgetBuddies.png" /></div>
-
-    <div class="projectText">
-      <div class="projectTitle">BUDGET BUDDIES</div>
-      <div class="projectDescription">A template for Budget Buddies, designed during the 48in48 hacakthon in London.</div>
-      <div class="projectShare">
-        <a href=""><div class="readMore"></div></a>
-        <a href=""><div class="viewIcon"></div></a>
-        <a href=""><div class="gitIcon"></div></a>
-      </div>
-    </div>
-
-  </div>
+</div> -->
 
 
 </div>

@@ -22,3 +22,4 @@
 [12-Nov-2019 17:28:53 UTC] PHP   4. WP_Hook->apply_filters() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/class-wp-hook.php:310
 [12-Nov-2019 17:28:53 UTC] PHP   5. wp_update_themes() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/class-wp-hook.php:286
 [12-Nov-2019 17:28:53 UTC] PHP   6. trigger_error() /Users/karkooshy/Local Sites/mqumairi/app/public/wp-includes/update.php:569
+[13-Nov-2019 02:39:15 UTC] PHP Parse error:  syntax error, unexpected ')', expecting '(' in /Users/karkooshy/Local Sites/mqumairi/app/public/wp-content/themes/mqumairiGreen/index.php on line 108

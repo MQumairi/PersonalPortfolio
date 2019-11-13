@@ -23,6 +23,7 @@ body {
   background-image:url("images/logo.png");
   background-size: 225px 150px;
   margin: auto;
+  margin-top: 50px;
 }
 
 #siteTitle {
@@ -33,6 +34,11 @@ body {
   font-size: 20px;
   margin: 20px 0px 10px 0px;
   text-shadow: 1px 2px 1px #000000;
+}
+
+#siteTitle a {
+  text-decoration: none;
+  color: #96B49A;
 }
 
 #mainContent {
@@ -188,6 +194,11 @@ body {
 .projectImage img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+}
+
+.projectTitle {
+  text-transform: uppercase;
 }
 
 .projectText {
@@ -313,6 +324,89 @@ body {
 }
 
 #gitContact:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+
+/*SINGLE POST*/
+
+#mainContentPost {
+  background-color: #F4EEF2;
+  margin: auto;
+  width: 80%;
+  height: min-content;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 30px;
+  padding: 50px 50px 50px 50px;
+  margin-top: 50px;
+}
+
+#imagePost {
+  grid-row: 1;
+  grid-column: 1/5;
+}
+
+#imagePost img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 5px solid #930098;
+}
+
+#textPost {
+  grid-row: 1;
+  grid-column: 5/13;
+  font-family: Verdana, Geneva, sans-sans-serif;
+  font-size: 20px;
+  background-color: #930098;
+  background-image: linear-gradient(to bottom right, #930098, #3788B0);
+  color: #F4EEF2;
+  padding: 50px 25px 30px 25px;
+  border-radius: 20px;
+}
+
+.postProjectShare {
+  margin: auto;
+  margin-top: 20px;
+  display: grid;
+  width: min-content;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.postViewIcon {
+  grid-row: 1;
+  grid-column: 1/2;
+  width: 50px;
+  height: 50px;
+  background-image: url("images/viewWhite.png");
+  background-size: 100% 100%;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.postViewIcon:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.postGitIcon {
+  grid-row: 1;
+  grid-column: 2/3;
+  width: 50px;
+  height: 50px;
+  background-image: url("images/gitWhite.png");
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.postGitIcon:hover {
   opacity: 1;
   transition: 0.3s;
 }
