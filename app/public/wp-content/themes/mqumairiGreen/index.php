@@ -93,9 +93,9 @@ get_header();
       <div class="projectTitle">BUDGET BUDDIES</div>
       <div class="projectDescription">A template for Budget Buddies, designed during the 48in48 hacakthon in London.</div>
       <div class="projectShare">
-        <div class="readMore">READ MORE</div>
-        <div class="view"></div>
-        <div class="git"></div>
+        <a href=""><div class="readMore"></div></a>
+        <a href=""><div class="viewIcon"></div></a>
+        <a href=""><div class="gitIcon"></div></a>
       </div>
     </div>
 
@@ -108,9 +108,9 @@ get_header();
       <div class="projectTitle">BUDGET BUDDIES</div>
       <div class="projectDescription">A template for Budget Buddies, designed during the 48in48 hacakthon in London.</div>
       <div class="projectShare">
-        <div class="readMore">READ MORE</div>
-        <div class="view"></div>
-        <div class="git"></div>
+        <a href=""><div class="readMore"></div></a>
+        <a href=""><div class="viewIcon"></div></a>
+        <a href=""><div class="gitIcon"></div></a>
       </div>
     </div>
 
@@ -135,9 +135,9 @@ get_header();
       <div class="projectTitle">BUDGET BUDDIES</div>
       <div class="projectDescription">A template for Budget Buddies, designed during the 48in48 hacakthon in London.</div>
       <div class="projectShare">
-        <div class="readMore">READ MORE</div>
-        <div class="view"></div>
-        <div class="git"></div>
+        <a href=""><div class="readMore"></div></a>
+        <a href=""><div class="viewIcon"></div></a>
+        <a href=""><div class="gitIcon"></div></a>
       </div>
     </div>
 
@@ -151,9 +151,9 @@ get_header();
       <div class="projectTitle">BUDGET BUDDIES</div>
       <div class="projectDescription">A template for Budget Buddies, designed during the 48in48 hacakthon in London.</div>
       <div class="projectShare">
-        <div class="readMore">READ MORE</div>
-        <div class="view"></div>
-        <div class="git"></div>
+        <a href=""><div class="readMore"></div></a>
+        <a href=""><div class="viewIcon"></div></a>
+        <a href=""><div class="gitIcon"></div></a>
       </div>
     </div>
 

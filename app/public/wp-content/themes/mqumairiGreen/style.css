@@ -168,6 +168,18 @@ body {
   border-top: 0.6px solid #F4EEF2;
 }
 
+.projectPost a {
+  color: #F4EEF2;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.projectPost a:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
 .projectImage {
   grid-row: 1;
   grid-column: 1/6;
@@ -189,4 +201,118 @@ body {
   margin: 20px 0px 10px 0px;
   padding-bottom: 20px;
   font-size: 14px;
+}
+
+.projectShare {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+}
+
+.readMore {
+  grid-row: 1;
+  background-image: url("images/readMore.png");
+  width: 30px;
+  height: 30px;
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.6;
+}
+
+.readMore:hover {
+  opacity: 1;
+}
+
+.viewIcon {
+  grid-row: 1;
+  background-image: url("images/viewWhite.png");
+  width: 30px;
+  height: 30px;
+  background-size: 100% 100%;
+  background-position: center center;
+  opacity: 0.6;
+}
+
+.viewIcon:hover {
+  opacity: 1;
+}
+
+.gitIcon {
+  grid-row: 1;
+  background-image: url("images/gitWhite.png");
+  height: 30px;
+  width: 30px;
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.6;
+}
+
+.gitIcon:hover {
+  opacity: 1;
+}
+
+/* FOOTER */
+
+#footer {
+  margin: 20px 0px 50px 0px;
+}
+
+#footerContents {
+  margin: auto;
+  width: min-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  text-align: center;
+}
+
+#mailContact {
+  grid-row: 1;
+  grid-column: 1/2;
+  background-image:url("images/mailIcon.png");
+  width: 60px;
+  height: 60px;
+  background-size: 100% 100%;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+#mailContact:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+#linkedInContact {
+  grid-row: 1;
+  grid-column: 2/3;
+  background-image:url("images/linkedGreen.png");
+  width: 60px;
+  height: 60px;
+  background-size: 100% 100%;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+#linkedInContact:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+#gitContact {
+  grid-row: 1;
+  grid-column: 3/4;
+  background-image:url("images/gitGreen.png");
+  width: 60px;
+  height: 60px;
+  background-size: 100% 100%;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+#gitContact:hover {
+  opacity: 1;
+  transition: 0.3s;
 }
