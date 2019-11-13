@@ -147,7 +147,6 @@ body {
 }
 
 
-
 /*Web Projects*/
 
 #webProjects {
@@ -158,6 +157,25 @@ body {
   background-color: #D79F05;
   background-image: linear-gradient(to bottom right, #D79F05, #D216C1);
   height: 100%;
+}
+
+.seeAll {
+  color: #F4EEF2;
+  margin-top: 50px;
+  font-family: Verdana, Geneva, sans-sans-serif;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.seeAll:hover {
+  opacity: 1;
+}
+
+.seeAll a {
+  color: #F4EEF2;
+  text-decoration: none;
 }
 
 /*POST*/
@@ -356,6 +374,18 @@ body {
   border: 5px solid #930098;
 }
 
+#imageWebPost {
+  grid-row: 1;
+  grid-column: 1/5;
+}
+
+#imageWebPost img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 5px solid #D79F05;
+}
+
 #textPost {
   grid-row: 1;
   grid-column: 5/13;
@@ -363,6 +393,18 @@ body {
   font-size: 20px;
   background-color: #930098;
   background-image: linear-gradient(to bottom right, #930098, #3788B0);
+  color: #F4EEF2;
+  padding: 50px 25px 30px 25px;
+  border-radius: 20px;
+}
+
+#textPostWeb {
+  grid-row: 1;
+  grid-column: 5/13;
+  font-family: Verdana, Geneva, sans-sans-serif;
+  font-size: 20px;
+  background-color: #D79F05;
+  background-image: linear-gradient(to bottom right, #D79F05, #D216C1);
   color: #F4EEF2;
   padding: 50px 25px 30px 25px;
   border-radius: 20px;
@@ -409,4 +451,107 @@ body {
 .postGitIcon:hover {
   opacity: 1;
   transition: 0.3s;
+}
+
+
+/*ARCHIVE*/
+
+#mainContentArchive {
+  background-color: #F4EEF2;
+  margin: auto;
+  width: 80%;
+  height: min-content;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 30px;
+  padding: 50px 50px 50px 50px;
+  margin-top: 50px;
+}
+
+.archiveImage {
+  grid-column: 1/5;
+}
+
+.archiveImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 5px solid #D79F05;
+}
+
+
+.archiveImageProg {
+  grid-column: 1/5;
+}
+
+.archiveImageProg img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 5px solid #930098;
+}
+
+.archiveTitle {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.archiveTitle:hover {
+  opacity: 1;
+}
+
+.archiveTitle a {
+  text-decoration: none;
+  color: #F4EEF2;
+}
+
+.archiveTextWeb {
+  grid-column: 5/13;
+  font-family: Verdana, Geneva, sans-sans-serif;
+  font-size: 20px;
+  background-color: #D79F05;
+  background-image: linear-gradient(to bottom right, #D79F05, #D216C1);
+  color: #F4EEF2;
+  padding: 50px 25px 30px 25px;
+  border-radius: 20px;
+}
+
+.archiveTextProg {
+  grid-column: 5/13;
+  font-family: Verdana, Geneva, sans-sans-serif;
+  font-size: 20px;
+  background-color: #930098;
+  background-image: linear-gradient(to bottom right, #930098, #3788B0);
+  color: #F4EEF2;
+  padding: 50px 25px 30px 25px;
+  border-radius: 20px;
+}
+
+#archiveProgTitle {
+  grid-column: 1/13;
+  font-family: Verdana, Geneva, sans-sans-serif;
+  font-size: 25px;
+  color: #930098;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#archiveWebTitle {
+  grid-column: 1/13;
+  font-family: Verdana, Geneva, sans-sans-serif;
+  font-size: 25px;
+  color: #D79F05;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.pageList {
+  color: black;
+}
+
+.pageList a {
+  color: red;
 }
